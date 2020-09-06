@@ -24,7 +24,8 @@ class MenuViewController: UIViewController {
 
     // MARK: - Properties
     
-    var tableView: UITableView! 
+    var tableView: UITableView!
+    var delegate: HomeControllerDelegate?
     
     // MARK: - Init
     
@@ -49,6 +50,8 @@ class MenuViewController: UIViewController {
         tableView.backgroundColor = .darkGray
         tableView.separatorStyle = .none
         tableView.rowHeight = 80
+        //tableView.allowsSelection = false
+        //tableView.isScrollEnabled = false
 
         view.addSubview(tableView)
         
@@ -69,10 +72,17 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let constants = Constants()
+        let menuOption = MenuOption(rawValue: indexPath.row)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: constants.reuseIdentifier, for: indexPath) as! MenuOptionTableViewCell
+        cell.descriptionLabel.text = menuOption?.description
+        cell.iconImageView.image = menuOption?.image
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let menuOption = MenuOption(rawValue: indexPath.row)
+        delegate?.handleMenuToggle(forMenuOption: menuOption)
+    }
 }

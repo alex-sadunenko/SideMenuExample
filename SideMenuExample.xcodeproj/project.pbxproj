@@ -17,6 +17,9 @@
 		63A779252502A2D9008260BB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A779242502A2D9008260BB /* MenuViewController.swift */; };
 		63A779272502AD31008260BB /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A779262502AD31008260BB /* Protocols.swift */; };
 		63A779292502B741008260BB /* MenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A779282502B741008260BB /* MenuOptionTableViewCell.swift */; };
+		63A7792B2503B18D008260BB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7792A2503B18D008260BB /* SettingsViewController.swift */; };
+		63A7792D2503B1A4008260BB /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7792C2503B1A4008260BB /* MenuOption.swift */; };
+		63A7792F2503D41B008260BB /* ExtentionForUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7792E2503D41B008260BB /* ExtentionForUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		63A779242502A2D9008260BB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		63A779262502AD31008260BB /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		63A779282502B741008260BB /* MenuOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionTableViewCell.swift; sourceTree = "<group>"; };
+		63A7792A2503B18D008260BB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		63A7792C2503B1A4008260BB /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		63A7792E2503D41B008260BB /* ExtentionForUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtentionForUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				63A779202502A2B7008260BB /* ContainerViewController.swift */,
 				63A779222502A2C8008260BB /* HomeViewController.swift */,
 				63A779242502A2D9008260BB /* MenuViewController.swift */,
+				63A7792A2503B18D008260BB /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 		63A7791E2502A238008260BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63A7792C2503B1A4008260BB /* MenuOption.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				63A779262502AD31008260BB /* Protocols.swift */,
+				63A7792E2503D41B008260BB /* ExtentionForUIViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,9 +195,12 @@
 				63A779292502B741008260BB /* MenuOptionTableViewCell.swift in Sources */,
 				63A779252502A2D9008260BB /* MenuViewController.swift in Sources */,
 				63A779212502A2B7008260BB /* ContainerViewController.swift in Sources */,
+				63A7792D2503B1A4008260BB /* MenuOption.swift in Sources */,
 				63A779272502AD31008260BB /* Protocols.swift in Sources */,
 				63A7790B2502A218008260BB /* SceneDelegate.swift in Sources */,
+				63A7792F2503D41B008260BB /* ExtentionForUIViewController.swift in Sources */,
 				63A779232502A2C8008260BB /* HomeViewController.swift in Sources */,
+				63A7792B2503B18D008260BB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
